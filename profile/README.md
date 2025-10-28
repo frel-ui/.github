@@ -1,8 +1,6 @@
-# Frel UI
-
 Frel UI aims to be a language and platform agnostic UI library.
 
-**Status:** Frel is in the design and proof-of-concept phase.
+**Status:** Specification and proof-of-concept.
 
 **Current focus:** specification and design
 
