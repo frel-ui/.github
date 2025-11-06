@@ -1,12 +1,27 @@
-# Frel UI
+# Frel
 
-Frel UI aims to be a language and platform-agnostic UI library.
+Frel is a declarative DSL for building reactive, platform-independent user interfaces,
+focused on intent rather than implementation details.
+
+The **Frel Compiler** compiles Frel to multiple host languages (Rust, TypeScript, Kotlin).
+
+The **Frel Runtime** manages reactivity and renders the UI to multiple platforms (web, 
+native mobile, desktop, PDF).
+
+Frel emphasizes a compact runtime footprint, deterministic rendering, and clean separation
+between declarative UI definitions and platform-specific adapters.
+
+Key features:
+
+- Declarative, reactive UI components
+- Programming language agnostic (host language independent)
+- Platform agnostic (web, mobile, desktop, documents)
+- Compact runtime with minimal overhead
 
 Repositories:
 
-* [frel-spec](https://github.com/frel-ui/frel-spec) - specification and design documents
-* [frel-rs](https://github.com/frel-ui/frel-rs) - Rust implementation
-* [frel-kt](https://github.com/frel-ui/frel-kt) - Kotlin implementation
+* [frel](https://github.com/frel-ui/frel)
+
 
 ## Project Status: Early Design Phase
 
@@ -19,7 +34,7 @@ Expect:
 - Discussions and design documents instead of working examples
 
 If you’re interested in the long-term vision or want to follow the design process,
-check out the [frel-spec](https://github.com/frel-ui/frel-spec) repository.
+check out the [frel](https://github.com/frel-ui/frel) repository.
 
 If you’re looking for a production-ready UI library — check back later!
 
@@ -27,26 +42,6 @@ If you’re looking for a production-ready UI library — check back later!
 
 - Designing the architecture
 - Writing parts which have somewhat finished designs
-
-## Relationship to Adaptive (Kotlin)
-
-Frel builds on ideas and experience from [**Adaptive**](https://adaptive.fun) —  
-a much broader library written in Kotlin ([github.com/spxbhuhb/adaptive](https://github.com/spxbhuhb/adaptive)).
-
-Adaptive covers a wide range of application-level functionality; Frel focuses specifically on
-**the UI-related aspects**.
-
-Planned migrations from Adaptive include:
-
-- **Fragment DSL**
-- **Layout algorithms**
-- **Style system** and resource management concepts
-- **Platform connectors** for rendering and input abstraction
-- **UI fragment library**
-
-Frel is not a direct port. I plan to use some parts of Adaptive, but the core reactivity
-concept is redesigned from scratch. Adaptive uses bit masks and closures inspired by Svelte.
-It works, but it makes separation of concerns difficult.
 
 ## Contributing
 
